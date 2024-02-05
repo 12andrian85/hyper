@@ -1,0 +1,100 @@
+.header {
+    height: 70px;
+
+    .topbar {
+        .dropdown-toggle::after {
+            display: none;
+        }
+
+        .dropdown-toggle {
+            display: flex;
+            align-items: center;
+            color: $gray-600;
+            background-color: transparent;
+            border: none;
+        }
+
+        &__btn-sidebar {
+            border: 0;
+            color: $gray-600;
+            background-color: transparent;
+        }
+
+        // search
+        &__search-large {
+            .dropdown-toggle {
+                border: none;
+                color: $gray-600;
+                background-color: transparent;
+            }
+
+            .dropdown-icon {
+                // margin-top: 5px;
+            }
+
+            .dropdown-menu {
+                height: 75px;
+
+            }
+
+        }
+
+        //language
+        &__language {
+            .dropdown-img {
+                height: 12px;
+            }
+
+            .dropdown-toggle::after {
+                display: block;
+            }
+
+            .dropdown-item {
+                text-transform: capitalize;
+                color: $gray-600;
+            }
+
+        }
+
+        // notification
+        &__notification {
+            .dropdown-toggle {
+                position: relative;
+                color: $secondary;
+            }
+
+            .dropdown-icon--not::after {
+                position: absolute;
+                content: "";
+                height: 7px;
+                width: 7px;
+                background-color: #fa5c7c;
+                border-radius: 50%;
+                top: 7px;
+                right: 14px;
+            }
+
+            .dropdown-menu {
+                width: 23rem;
+                margin-left: 25px !important;
+            }
+
+            .dropdown-wrap{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-bottom: 1px dashed $gray-600;
+            }
+            .dropdown-title{
+                color: $gray-600;
+                font-weight: 600;
+            }
+            .dropdown-clear{
+                text-decoration: underline;
+                color: $dark;
+            }
+
+        }
+    }
+
+}

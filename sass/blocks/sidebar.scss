@@ -1,0 +1,331 @@
+.sidebar {
+    background-color: #313A46FF;
+    // overflow: hidden;
+    position: absolute;
+    left: -260px;
+    top: 0;
+    min-width: 260px;
+    transition-duration: 0.7s, 0.5s;
+    transition-property: all;
+
+    &__logo {
+        height: 24px;
+    }
+
+    &__btn-close {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        color: $gray-600;
+    }
+
+    .side-nav {
+        padding: 0 25px;
+
+        &__title {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 700;
+            color: $gray-600;
+            padding: 15px 0;
+        }
+
+        &__item {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            justify-content: start;
+            text-transform: capitalize;
+            color: $white;
+            font-size: 20px;
+            padding: 15px 0;
+        }
+
+        &__item:hover {
+            color: $white;
+        }
+
+        &__text {
+            color: $gray-600;
+        }
+        &__text:hover {
+            color: $white;
+        }
+
+
+
+        &__list {
+            display: flex;
+            font-size: 16px;
+            font-weight: 500;
+            color: $gray-600;
+            padding: 10px 0;
+            text-transform: capitalize;
+
+        }
+
+        &__list:hover {
+            color: $white;
+        }
+    }
+
+    .accordion {
+
+        // width: 100%;
+        .accordion-item {
+            background-color: transparent;
+            border: none;
+        }
+
+        .accordion-button {
+            text-transform: capitalize;
+            width: 190px;
+        }
+
+        .accordion-btn::after {
+            display: none;
+        }
+
+        .accordion-btn::before {
+            position: absolute;
+            content: "5";
+            width: 16px;
+            padding-left: 5px;
+            background-color: #00FFFFFF;
+            right: 20px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        .accordion-nav-item {
+            padding: 10px;
+            font-size: 15px;
+
+        }
+
+        .accordion-nav-item-collapsed {
+            display: none;
+        }
+
+        .accordion-nav-item,
+        .accordion-nav-item a {
+            color: $gray-600;
+            text-transform: capitalize;
+        }
+
+        .accordion-nav-item:hover a {
+            color: $white;
+        }
+
+        .accordion-nav-item--active {
+            font-weight: 500;
+            color: $white;
+        }
+    }
+
+    .accordion-button:hover {
+        color: $white;
+    }
+
+    .accordion-button {
+        // position: relative;
+        background-color: transparent;
+        color: $gray-600;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .sidebar-box {
+        background-color: #404853FF;
+        border-radius: 10px;
+
+        &__img {
+            height: 100px;
+        }
+
+        &__close {
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            color: $gray-600;
+        }
+
+        &__btn {
+            background-color: $gray-600;
+            border-radius: 5px;
+            color: $white;
+
+
+        }
+
+    }
+
+    .sidebar-inner {
+
+        &__items {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__icon {
+            color: $gray-600;
+        }
+
+
+        &__btn::after {
+            display: none;
+        }
+    }
+
+    .side-nav__icon-dropdown {
+        // padding-left: 20px;
+        margin-top: 10px;
+    }
+}
+
+.sidebar--extended {
+    left: 0;
+    transition-duration: 0.7s, 0.5s;
+    transition-property: all;
+
+    .sidebar__logo--sm {
+        display: none;
+    }
+}
+
+.sidebar--collapsed {
+    .accordion-collapse {
+        display: none;
+    }
+
+    .accordion-btn {
+        display: none;
+        width: auto;
+    }
+
+    .side-nav__icon-dropdown {
+        margin-top: 0;
+    }
+
+    .accordion-nav-item--active {
+        color: $white;
+    }
+
+    .sidebar-box {
+        display: none;
+    }
+
+    .side-nav {
+        padding: 0;
+
+        &__title {
+            display: none;
+        }
+
+
+        &__item {
+            position: relative;
+            justify-content: center;
+        }
+
+
+        &__item:hover {
+            background-color: #737DF2FF;
+
+            .accordion-collapse {
+                display: block;
+                width: 180px;
+                background-color: #404853FF;
+                position: absolute;
+                left: 70px;
+                top: 1px;
+                padding-bottom: 0;
+            }
+
+            .side-nav__text {
+                background-color: #737DF2FF;
+                padding: 12px;
+                color: $white;
+            }
+
+            .accordion-nav-item--active {
+                background-color: #737DF2FF;
+                color: $white;
+                padding: 15px;
+                top: 0;
+            }
+
+
+        }
+
+        .accordion {
+
+            .accordion-btn::before::after {
+                display: none;
+            }
+        }
+    }
+
+    .accordion {
+        .accordion-title {
+            display: none;
+        }
+
+        .accordion-body {
+            padding: 0;
+        }
+
+        .accordion-nav-item-collapsed {
+            position: relative;
+            display: block;
+        }
+
+        .accordion-nav-item-collapsed::after {
+            position: absolute;
+            content: "5";
+            width: 16px;
+            font-size: 12px;
+            padding-left: 5px;
+            background-color: aqua;
+            border-radius: 5px;
+            right: 12px;
+            top: 18px;
+        }
+    }
+}
+
+@media (min-width: $width-tablet) {
+    .sidebar {
+        position: relative;
+        min-width: 0px;
+        left: auto;
+
+
+    }
+
+    .sidebar--collapsed {
+        transition-duration: 0.7s, 0.5s;
+        transition-property: all;
+        width: 70px;
+
+        .sidebar__logo--sm {
+            display: block;
+        }
+
+        .sidebar__logo--lg {
+            display: none;
+        }
+
+    }
+
+    .sidebar--extended {
+        width: 260px;
+
+    }
+
+}
+
+@media (min-width: $width-desktop) {
+    // .sidebar {}
+}
