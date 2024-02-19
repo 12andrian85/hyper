@@ -9,6 +9,11 @@
 @import "./blocks/sidebar";
 @import "./blocks/header";
 @import "./blocks/dashboard";
+@import "./blocks/projections";
+@import "./blocks/revenue";
+@import "./blocks/earnings";
+@import "./blocks/location";
+@import "./blocks/sales";
 @import "./blocks/main-nav";
 @import "./blocks/footer";
 
@@ -16,4 +21,12 @@
 
 
 // components
-@import "./components/accordion.scss";
+@import "./components/settings.scss";
+@import "./components/detached.scss";
+@import "./components/widget.scss";
+@import "./components/dropdown.scss";
+@import "./components/progress-bar.scss";
+@import "./components/selling.scss";
+@import "./components/sales.scss";
+@import "./components/activity.scss";
+@import "./components/search.scss";

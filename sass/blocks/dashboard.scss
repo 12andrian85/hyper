@@ -1,4 +1,24 @@
 .dashboard{
-    margin-top: 4rem;
-    // background-color: red;
+    // margin-top: 4rem;
+    // background-color: $gray-400;
+    &__title{
+        font-size: 24px;
+        font-weight: 700;
+        color: $primary; 
+        margin-bottom: 0;
+    }
+    &__datatime{
+        background-color: $gray-300;
+        padding: 5px 10px;
+        border: none;
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        background-color: $secondary;
+        padding: 10px;
+        color: $white;
+        border-radius: 3px;
+        
+    }
 }

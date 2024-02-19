@@ -1,0 +1,24 @@
+.sales {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px;
+    border-bottom: 1px solid $gray-400;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: $gray-600;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__element {
+        width: 11px;
+        height: 11px;
+        // background-color: red;
+        margin-right: 5px;
+    }
+    
+
+}

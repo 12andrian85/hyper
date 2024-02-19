@@ -1,0 +1,44 @@
+.widget {
+    .card-body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        .card-text {
+            font-weight: 400;
+            color: $primary;
+            font-size: 22px;
+            margin: 0;
+        }
+        .card-number{
+            font-weight: 600;
+            color: $gray-600;
+        }
+        .card-wrapper{
+            color: $success;
+        }
+        .card-wrapper--negative{
+            color: $danger;
+        }
+
+        .card-procent{
+            font-size: 20px;
+        }
+        .card-wrap{
+            position: absolute;
+            right: 24px;
+            top: 24px;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-radius: 5px;
+            width: max-content;
+            background-color: #DCDEFCFF;
+        }
+        .card-thumb{
+            color: #727CF5FF;
+        }
+
+    }
+    
+}

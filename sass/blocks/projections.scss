@@ -1,0 +1,19 @@
+.projections{
+    .card-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+        border: none;
+        margin: 0;
+    }
+
+    .card-title{
+        font-weight: 600;
+        color: $gray-600;
+    }
+    .card-img{
+        height: 315px;
+    }
+
+}

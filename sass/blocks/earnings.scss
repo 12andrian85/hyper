@@ -1,0 +1,23 @@
+.earnings{
+    &__title{
+        font-weight: 600;
+        color: $gray-600;
+    }
+    &__text{
+        color: $gray-500;
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        width: max-content;
+        font-size: 20px;
+        padding: 5px 15px;
+    }
+    &__arrow{
+        font-size: 20px;
+        margin: 3px 0 0 5px;
+    }
+    &__btn:hover{
+        color: $white;
+    }
+}

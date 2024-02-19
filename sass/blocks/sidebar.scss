@@ -43,12 +43,20 @@
         }
 
         &__item:hover {
-            color: $white;
+            .side-nav__icon{
+                color: $white;
+            }
         }
-
+        &__item:hover {
+            .side-nav__icon-dropdown{
+                color: $white;
+            }
+        }
+        
         &__text {
             color: $gray-600;
         }
+
         &__text:hover {
             color: $white;
         }
@@ -181,6 +189,21 @@
     .side-nav__icon-dropdown {
         // padding-left: 20px;
         margin-top: 10px;
+        color: $gray-500;
+    }
+
+    .side-nav__icon-dropdown:hover, 
+    .side-nav__icon:hover {
+        color: white;
+    }
+    
+    .side-nav__icon-dropdown {
+        margin-top: 0;
+        color: $gray-500;
+    }
+    
+    .side-nav__icon {
+        color: $gray-500;
     }
 }
 
@@ -204,9 +227,7 @@
         width: auto;
     }
 
-    .side-nav__icon-dropdown {
-        margin-top: 0;
-    }
+
 
     .accordion-nav-item--active {
         color: $white;

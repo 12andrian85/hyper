@@ -1,0 +1,31 @@
+.progress-bar{
+    width: 100%;
+    padding-bottom: 15px;
+
+    &__title{
+        text-transform: capitalize;
+        font-weight: 400;
+        color: $gray-600
+    }
+
+    .progress{
+        height: 5px;
+        width: 100%;
+        background-color: $gray-400;
+        border-end-end-radius: 5px;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+    .progress-bar{
+        height: 5px;
+        background-color: $secondary;
+
+    }
+    &__value{
+        font-size: 20px;
+        font-weight: 600;
+        color: $primary;
+        margin-left: 30px;
+
+    }   
+}

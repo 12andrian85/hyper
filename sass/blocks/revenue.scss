@@ -1,0 +1,33 @@
+.revenue {
+    .card-body{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: $gray-200;
+    }
+    .card-text {
+        text-transform: capitalize;
+        font-size: 22px;
+        color: $gray-600;
+    }
+    .card-inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 38px;
+        color: $primary;
+    }
+    .card-money{
+        width: 30px;
+        font-size: 42px;
+    }
+    
+    .card-checked{
+        width: 10px;
+        height: 10px;
+        
+        border-radius: 5px;
+        margin-top: 10px;
+        
+    }
+}

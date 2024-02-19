@@ -1,0 +1,54 @@
+.selling {
+    table {
+        width: max-content;
+        border-bottom: none;
+
+        tr {
+            border-bottom: 1px solid $gray-400;
+        }
+        tr:hover{
+            background-color: $gray-200;
+        }
+
+        tr td:first-child {
+            width: 285px;
+        }
+        
+        td{
+            padding: 16px;
+            
+        }
+        td :nth-child(n+2){
+            display: flex;
+            flex-direction: column;
+            line-height: 2;
+            text-transform: capitalize;
+        }
+
+        td :first-child {
+            font-size: 17px;
+            font-weight: 400;
+            color: $gray-600;
+            text-transform: capitalize;
+        }
+        
+        td :last-child {
+            font-size: 15px;
+            font-weight: 400;
+            color: $gray-500;
+        }
+
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .selling {
+        table {
+            width: 100%;
+        }
+
+        tr td:first-child {
+            width: 380px;
+        }
+    }
+}

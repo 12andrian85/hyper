@@ -5,12 +5,12 @@ $gray-900: #212529;
 // scss-docs-end gray-color-variables
 
 // scss-docs-start color-variables
-$c-primary:    #707981FF;
+$c-primary:    rgb(151, 153, 155);
 $c-secondary:  #727CF4FF;
 $red:     #cc0a1e;
 $yellow:  #e6ff07;
 $green:   #5fc01e;
-$cyan:    #3bdeff;
+$cyan:    #39AFD5FF;
 // scss-docs-end color-variables
 
 // scss-docs-start theme-color-variables
@@ -25,7 +25,7 @@ $dark:          $gray-900;
 // scss-docs-end theme-color-variables
 
 // Square radius
-$border-radius:               0;
+// $border-radius:               0;
 
 // Create your own map
 $custom-colors: (

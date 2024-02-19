@@ -1,0 +1,116 @@
+.settings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__card {
+        position: relative;
+        display: flex;
+        width: 100px;
+        height: 70px;
+        border: 1px solid $gray-500;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    &__sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: $gray-300;
+        border-right: 1px solid $gray-500;
+        height: inherit;
+        padding: 0 12px;
+    }
+
+    &__sidebar--size {
+        height: max-content;
+        padding: 6px 10px;
+    }
+
+    &__item {
+        background-color: $gray-500;
+        padding: 2px 5px;
+        border-radius: 2px;
+    }
+
+    &__item--lg {
+        padding: 4px 5px;
+    }
+
+    &__item--size {
+        height: max-content;
+        padding: 6px 10px;
+    }
+
+
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+    }
+
+    &__header {
+        width: inherit;
+        padding: 10px;
+        background-color: $gray-300;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        color: $primary;
+        text-transform: capitalize;
+    }
+
+    &__checkbox {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    input[type="radio"] {
+        width: 15px;
+        height: 15px;
+        accent-color: green;
+    }
+
+    input[type="radio"] {
+        appearance: none;
+        -webkit-appearance: none;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 0.1rem;
+        border-radius: 7px;
+    }
+
+    input[type="radio"]::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        clip-path: polygon(39% 39%, 18% 21%, 4% 37%, 47% 74%, 70% 50%, 70% 50%, 100% 20%, 80% 0%);
+        transform: scale(0);
+        background-color: $white;
+
+    }
+
+    input[type="radio"]:checked {
+        padding-top: 4px;
+        background-color: $secondary;
+
+    }
+
+    input[type="radio"]:checked::before {
+        transform: scale(1);
+        background-color: $white;
+
+    }
+
+    input[type="radio"]:hover {
+        color: black;
+
+    }
+
+}

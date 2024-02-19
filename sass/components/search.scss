@@ -1,0 +1,23 @@
+.search {
+    position: relative;
+
+    &__icons {
+        position: absolute;
+        z-index: 1;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 7px;
+    }
+    input{
+        background-color: $gray-300;
+        padding-left: 35px;
+        font-size: 20px;
+    }
+    &__btn{
+        padding: 6px 15px;
+        background-color: $secondary;
+        color: $white;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}

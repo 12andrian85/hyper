@@ -1,0 +1,50 @@
+.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+
+    .dropdown-title {
+        font-weight: 600;
+        color: $gray-600;
+        text-transform: uppercase;
+    }
+
+    .dropdown-toggle {
+        background-color: transparent;
+        border: none;
+    }
+
+    .dropdown-icon {
+        color: $gray-600;
+    }
+
+
+    .dropdown-toggle:active {
+        background-color: transparent;
+    }
+
+    .dropdown-toggle::after {
+        display: none;
+    }
+
+
+    .dropdown-item {
+        text-transform: capitalize;
+        color: $gray-600;
+        font-size: 20px;
+
+    }
+
+    .dropdown-item:hover {
+        color: $dark;
+    }
+
+    .dropdown-download {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+}
