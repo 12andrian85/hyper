@@ -14,9 +14,10 @@
 </head>
 
 <body class="d-flex">
-    <div class="container-fluid p-0 d-flex w-auto">
+    <div class="d-flex"></div>
+    <div class="container-fluid position-relative px-0 d-flex w-auto">
         <!-- sidebar -->
-        <div class="sidebar sidebar--extended- sidebar--collapsed z-1">
+        <div class=" sidebar sidebar--collapsed z-1" id="sidebar">
             <div class="container px-0">
                 <div class="d-flex w-100 py-4">
                     <a class="d-flex align-items-center justify-content-center w-100" href="components.html">
@@ -29,7 +30,7 @@
                             </span>
                         </div>
                     </a>
-                    <button type="button" class="sidebar__btn-close btn-close d-md-none" aria-label="Close">
+                    <button type="button" onclick="toggleClasa()" id="closeBtn" class="sidebar__btn-close btn-close d-md-none" aria-label="Close">
                         <span class="material-symbols-outlined">
                             close
                         </span>
@@ -38,7 +39,7 @@
                 <div class="side-nav">
                     <h6 class="side-nav__title">navigation</h6>
                     <!-- dashboard -->
-                    <ul class="m-0">
+                    <ul class="m-0 w-100">
                         <li class="side-nav__item">
                             <span class="side-nav__icon-dropdown material-symbols-outlined">
                                 home
@@ -56,7 +57,8 @@
                                         data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <ul class="accordion-nav-second">
-                                                <li class="accordion-nav-item accordion-nav-item-collapsed accordion-nav-item--active">
+                                                <li
+                                                    class="accordion-nav-item accordion-nav-item-collapsed accordion-nav-item--active">
                                                     Dashboard</li>
                                                 <li class="accordion-nav-item">Analytics</li>
                                                 <li class="accordion-nav-item ">Ecommerce</li>
@@ -71,7 +73,7 @@
                         </li>
                     </ul>
                     <!-- ====apps==== -->
-                    <div>
+                    <div class="w-100">
                         <h6 class="side-nav__title">APPS</h6>
                         <ul>
                             <li class="side-nav__item">
@@ -258,7 +260,7 @@
                         </ul>
                     </div>
                     <!-- ====custom==== -->
-                    <div>
+                    <div class="w-100">
                         <h6 class="side-nav__title">CUSTOM</h6>
                         <ul>
                             <!-- page -->
@@ -327,7 +329,7 @@
                         </ul>
                     </div>
                     <!-- ====COMPONENTS==== -->
-                    <ul>
+                    <ul class="w-100">
                         <h6 class="side-nav__title">COMPONENTS</h6>
                         <!-- base UI -->
                         <li class="side-nav__item">
@@ -657,7 +659,7 @@
                         <li class="side-nav__item">
                             <span class="side-nav__icon-dropdown material-symbols-outlined">
                                 drive_file_move
-                                </span>
+                            </span>
                             <div class="accordion" id="levels">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
@@ -689,10 +691,9 @@
                         </li>
                     </ul>
                 </div>
-
                 <div class="sidebar-box p-4">
                     <div class="d-flex align-items-center justify-content-end">
-                        <button type="button" class="sidebar-box__close btn-close" aria-label="Close">
+                        <button type="button" class="sidebar-box__close btn-close" aria-label="Close" id="close">
                             <span class="material-symbols-outlined">
                                 close
                             </span>
@@ -708,21 +709,22 @@
             </div>
         </div>
     </div>
+    <!-- main -->
     <div class=" w-100">
         <!-- header -->
         <header class="header  position-absolute- w-100 top-0 d-flex align-items-center">
             <div class="topbar w-100 d-flex align-items-center justify-content-between">
                 <!-- logo-sm -->
                 <div class="d-flex align-items-center">
-                    <div class="d-flex align-items-center d-md-none">
+                    <div class="d-flex align-items-center d-none">
                         <img class=" topbar__logo-sm" src="/public/img/logo-dark-sm.png" alt="">
                     </div>
-                    <button class="topbar__btn-sidebar d-flex me-3">
+                    <button onclick="toggleClasa()" class="btn topbar__btn-sidebar d-flex me-3" id="close">
                         <span class="material-symbols-outlined">
                             menu
                         </span>
                     </button>
-                    <form class="search input-group">
+                    <form class="search input-group d-none d-md-flex">
                         <span class="search__icons material-symbols-outlined">
                             search
                         </span>
@@ -1612,7 +1614,7 @@
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <div class="d-flex align-items-center">
                                             <div>
-                                                <img class="dropdown-avatar" src="/public/img/avatar-1.jpg" alt="">
+                                                <img class="dropdown-avatar" src="public/img/avatar-1.jpg" alt="">
                                             </div>
                                             <div class="d-none d-lg-block text-start">
                                                 <h6 class="dropdown-title">Dominik keller</h6>
@@ -1868,7 +1870,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body d-block d-md-flex">
                                     <div class="text-center p-4-">
                                         <span class="card-text">current week</span>
                                         <div>
@@ -1909,9 +1911,8 @@
                                         arrow_forward
                                     </span>
                                 </a>
-                                <div class="overflow-hidden" <img class="earnings__img w-100"
-                                    src="/public/img/Screenshot_1.jpg" alt="img">
-                                    <img class="earnings__img w-100" src="/public/img/Screenshot_1.jpg" alt="img">
+                                <div class="overflow-hidden">
+                                    <img class="earnings__img w-100" src="public/img/Screenshot_1.jpg" alt="img">
                                 </div>
                             </div>
                         </section>
@@ -1942,7 +1943,7 @@
                             <div name="maps" class="overflow-hidden pb-3">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d177030.5704591183!2d28.44629225!3d46.108861250000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1708025263269!5m2!1sen!2s"
-                                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                             <!-- progres -->
@@ -2124,7 +2125,7 @@
                                 </a>
                             </div>
                             <div class="overflow-hidden">
-                                <img class="w-100" src="/public/img/Screenshot_2.jpg" alt="">
+                                <img class="w-100" src="public/img/Screenshot_2.jpg" alt="">
                             </div>
                             <div>
                                 <!-- sales -->
@@ -2252,54 +2253,35 @@
                 </div>
             </div>
         </main>
-    </div>
-    <div class="" style="height: 15rem;"></div>
-    <footer class="footer">
-        <!-- <div>
-                <div class="block">
-                    <div class="block__element">dasdasd</div>
-                    <div class="block__element--show">asdasdasd</div>
+        <!-- footer -->
+        <footer class="footer border-top">
+            <div class="container">
+                <div class="footer__container">
+                    <span class="footer__developer">
+                        2024 ® Hyper-Coderthemes.com
+                    </span>
+                    <ul class="footer__list d-none d-md-block">
+                        <li class="footer__item">
+                            <a href="https://coderthemes.com/hyper/saas/index.html">about</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">support</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">contact us</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="block">
-                    <div class="block-element">dasdasd</div>
-                    <div class="block-element-show">asdasdasd</div>
-                </div>
-            </div> -->
-    </footer>
-    </div>
-    </div>
-
-    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-        aria-controls="offcanvasExample">
-        Button with data-bs-target
-    </button>
-
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div>
-                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
-                lists, etc.
             </div>
-            <div class="dropdown mt-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                    Dropdown button
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </div>
-        </div>
-    </div> -->
-
-
-
-
+        </footer>
+    </div>
+    <script>
+        function toggleClasa() {
+            var element = document.getElementById("sidebar");
+            element.classList.toggle("sidebar--collapsed"),
+                element.classList.remove("sidebar--extended");
+        }
+    </script> 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

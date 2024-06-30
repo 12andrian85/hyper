@@ -1,0 +1,16 @@
+.c-button {
+    &__btn {
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        background-color: $secondary;
+        padding: 20px;
+    }
+
+    &__btn:focus {
+        .c-button__icon {
+            transform: rotate(90deg);
+            transition-duration: 0.6s;
+        }
+    }
+}

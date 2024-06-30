@@ -10,14 +10,15 @@
             height: 20px;
             margin: 0 20px;
         }
-        &__search button{
+
+        &__search button {
             border: none;
             background-color: $secondary;
             color: $white;
             padding: 5px 10px;
             border-top-right-radius: 5px;
             border-bottom-right-radius: 5px;
-            
+
         }
 
         .dropdown-toggle {
@@ -35,7 +36,18 @@
         }
 
         // search
-        &__search-large{
+
+        .search {
+            &__btn {
+                font-size: 14px;
+            }
+
+            &__input {
+                font-size: 14px;
+            }
+        }
+
+        &__search-large {
             .dropdown-toggle {
                 border: none;
                 color: $gray-600;
@@ -131,6 +143,7 @@
                 color: $gray-600;
                 font-weight: 600;
                 margin-bottom: 0;
+                font-size: 12px;
             }
 
             .dropdown-clear {
@@ -312,6 +325,7 @@
             .dropdown-title {
                 font-weight: 700;
                 margin-bottom: 0;
+                text-transform: capitalize;
             }
 
             .dropdown-founder {
@@ -328,6 +342,7 @@
                 .dropdown-text {
                     color: $dark;
                 }
+
                 .dropdown-thumb {
                     color: $dark;
                 }

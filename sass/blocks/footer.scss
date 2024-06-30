@@ -1,0 +1,26 @@
+.footer {
+    &__container {
+        padding: 24px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__developer {
+        font-size: 18px;
+        color: $gray-600;
+    }
+    
+    &__list {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    &__item{
+        text-transform: capitalize;
+        margin-left: 24px;
+    }
+
+}
